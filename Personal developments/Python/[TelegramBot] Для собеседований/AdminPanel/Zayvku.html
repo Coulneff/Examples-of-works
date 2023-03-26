@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Заявки</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main_app.js"></script>
+  <script type="text/javascript" src="js/BDCore.js"></script>
+</head>
+<body style="background-color:rgb(36, 35, 41);" onload="AddTable('av',['SotrF','SotrN','SotrN','DateBitr','Dolznost','Status']);">
+  <header>
+    <h1>Заявки</h1>
+    <nav>
+      <ul>
+        <li><a href="Main.html">Статистика</a></li>
+        <li><a href="Zayvku.html">Заявки</a></li>
+        <li><a href="#">Бот</a></li>
+        <li><a href="Users.html">Пользователи</a></li>
+        <li><a href="#" onclick="AddTable('av',['Фамилия','Имя','Отчество']);">Настройки</a></li>
+        <li><a href="#" onclick="SessionEnd()">Выход</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main style="background-color:rgb(36, 35, 41);">
+    <table style="background-color: rgb(228, 228, 228);">
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Фамилия</th>
+          <th>Имя</th>
+          <th>Отчество</th>
+          <th>Год рождения</th>
+          <th>Должность</th>
+          <th>Статус</th>
+          <th>Действие</th>
+        </tr>
+      </thead>
+      <script>
+        ZayvkuParam = ["Фамилия","Имя","Отчество"];
+      </script>
+      <tbody id="ID_Zayvku">
+        <tr>
+          <td>1</td>
+          <td>Иванов</td>
+          <td>Иван</td>
+          <td>Иванович</td>
+          <td>1985</td>
+          <td>Менеджер</td>
+          <td>Новый</td>
+          <td>
+            <button>Открыть</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Петров</td>
+          <td>Петр</td>
+          <td>Петрович</td>
+          <td>1990</td>
+          <td>Программист</td>
+          <td>В работе</td>
+          <td>
+            <button>Открыть</button>
+          </td>
+        </tr>
+        <!-- Здесь можно добавить дополнительные строки с данными -->
+      </tbody>
+    </table>
+  </main>
+  
+</body>
+</html>

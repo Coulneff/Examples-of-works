@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Пользователи</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/BDCore.js"></script>
+  </head>
+  <body style="background-color:rgb(36, 35, 41);">
+    <header>
+      <h1>Пользователи</h1>
+      <nav>
+        <ul>
+          <li><a href="Main.html">Статистика</a></li>
+          <li><a href="Zayvku.html">Заявки</a></li>
+          <li><a href="#">Бот</a></li>
+          <li><a href="Users.html">Пользователи</a></li>
+          <li><a href="#">Настройки</a></li>
+          <li><a href="#" onclick="SessionEnd()">Выход</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <button class="add-user-button">Добавить нового пользователя</button>
+      <table style="background-color: rgb(228, 228, 228);">
+        <thead>
+          <tr>
+            <th>№</th>
+            <th>Логин</th>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Отчество</th>
+            <th>Номер телефона</th>
+            <th>Действие</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>user1</td>
+            <td>Иванов</td>
+            <td>Иван</td>
+            <td>Иванович</td>
+            <td>+7 (123) 456-78-90</td>
+            <td>
+              <button>Редактировать</button>
+              <button>Удалить</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>user2</td>
+            <td>Петров</td>
+            <td>Петр</td>
+            <td>Петрович</td>
+            <td>+7 (987) 654-32-10</td>
+            <td>
+              <button>Редактировать</button>
+              <button>Удалить</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
